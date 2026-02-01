@@ -228,7 +228,20 @@ header h1 {
     padding: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     height: 500px;
+    overflow: scroll;
 }
+
+.image-note-long {
+    background: white;
+    border: 1px solid #dee2e6;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    height: 580px;
+}
+
+
 
 .image-note h4 {
     margin: 0 0 0.5rem 0;
