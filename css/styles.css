@@ -604,7 +604,8 @@ code {
 
 /* zoomable  ↑  */
 
-#entry {
-    /* transform: scale(0.7); */
+.fitPic {
+    max-height: 500px;
+    width: auto;
 
 }
