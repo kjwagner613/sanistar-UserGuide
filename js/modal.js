@@ -9,13 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.classList.add('active');
         modalImg.src = src;
         captionText.textContent = alt;
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
         document.body.style.overflow = 'hidden';
+        document.body.style.paddingRight = scrollbarWidth ? `${scrollbarWidth}px` : '';
     }
 
     // Close modal
     function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
     }
 
     // Add click handlers to images

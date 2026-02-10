@@ -49,7 +49,7 @@
 
         <!-- LOGIN -->
         <div class="image-row">
-          <img id="entry" src="../images/entryAndDash.png" alt="Login Screens">
+          <img id="entry" src="../images/entryAndDash.png" alt="Login Screens" class="step-image">
           <div class="image-note">
             <h4>Signing In</h4>
             <p>Use your assigned username and password. If you cannot sign in, your supervisor must activate your
@@ -60,7 +60,7 @@
 
         <!-- Sys Overview -->
         <div class="image-row">
-          <img src="../images/System Components.png" alt="System Overview">
+          <img src="../images/System Components.png" alt="System Overview" class="step-image">
           <div class="image-note-long">
             <h4>System Overview</h4>
             <p>This system is designed to facilitate the following workflows:</p>
@@ -80,7 +80,7 @@
 
         <!-- DASHBOARD -->
         <div class="image-row">
-          <img src="../images/login-svcs-dash.png" alt="Services Dashboard Overview" class="fitPic">
+          <img src="../images/login-svcs-dash.png" alt="Services Dashboard Overview" class="fitPic step-image">
           <div class="image-note">
             <h4>Dashboard Overview</h4>
             <p>The dashboard shows:</p>
@@ -98,7 +98,7 @@
 
         <!-- Customer Master -->
         <div class="image-row">
-          <img src="../images/CustomerMaster.png" alt="Customer Master Record" class="fitPic">
+          <img src="../images/CustomerMaster.png" alt="Customer Master Record" class="fitPic step-image">
           <div class="image-note">
             <h4>Customer Master Records</h4>
             <p>All information needed to conduct business with your clients is recorded on one of three components
@@ -116,43 +116,51 @@
 
         <!-- Sales Order Processing -->
         <div class="image-row">
-          <img src="../images/salesOrder.png" alt="Sales Order Form" class="fitPic">
+          <img src="../images/salesOrder.png" alt="Sales Order Form" class="fitPic step-image">
           <div class="image-note">
             <h4>Sales Order Processing</h4>
             <p>Sales Orders initiate downstream processes such as: build orders, thus directly affecting available parts
               inventory values.</p>
             <ul>
-              <li>The information entered in a Sales Order is used in every aspect of client relations including invoicing and shipping.</li>
+              <li>The information entered in a Sales Order is used in every aspect of client relations including
+                invoicing and shipping.</li>
               <li>Data is pulled from the Customer Master:</li>
               <li>Which is used to manage SLAs and report risk.</li>
               <li>Ship-To is referenced for shipping details.</li>
               <li>Bill-To data supplies A/R with the clients invoicing preferences.</li>
-             </ul>
-            
+            </ul>
+
           </div>
         </div>
 
         <!-- Service Ticket Lifecycle -->
         <div class="image-row">
-          <img src="../images/serviceTicketLife.png" alt="Service Ticket Lifecycle" class="fitPic">
+          <img src="../images/serviceTicketLife.png" alt="Service Ticket Lifecycle" class="fitPic step-image">
           <div class="image-note">
-            <h4>Service ticket lifecycle</h4>
-            <p>If you pulled parts but didn’t use them:</p>
+            <h4>Service &amp; Build Ticket Lifecycle</h4>
+            <p>Currently, there are three types of tickets:</p>
             <ul>
-              <li>Open the build order</li>
-              <li>Tap <strong>Return Parts</strong></li>
-              <li>Enter the quantity being returned</li>
+              <li>Product Service</li>
+              <li>Product Build</li>
+              <li>Internal IT/Support</li>
             </ul>
-            <p>Sanistar logs a replenishment entry and releases the reserved demand.</p>
+            <p>Each are governed by seperate SLA durations (Service &amp; Build)</p>
+            <p>Service and Build are very similar, only Build has a product decompose step to evaluate fullfilment (MRP)
+              and submit purschase requirements to meet demand.</p>
+            <p>Support tickets are internal are can be used to log and communicate anything that is not working, or
+              requires attention at your site.</p>
           </div>
         </div>
 
-        <!-- Live Inventory with Consumption -->
+        <!-- BUILD PROCESS -->
         <div class="image-row">
-          <img src="../images/buildticketLife.png" alt="Build Order Lifecycle" class="fitPic">
+          <img src="../images/buildticketLife.png" alt="Build Order Lifecycle" class="fitPic step-image">
           <div class="image-note">
-            <h4>Live inventory with consumption</h4>
-            <p>If inventory is insufficient, Sanistar will:</p>
+            <h4>Product Build Ticket Lifecycle</h4>
+            <p>When a Sales Order is submitted, the system will take the products and decompose themn to their component
+              parts.</p>
+            <p>Through the BOM it will calcuaalte hwo many parts wil be needed and cherck current inventory, if there
+              are not enough in inventory to fullfil the order, it wil recommend you purchase the needed items. </p>
             <ul>
               <li>Flag the shortage on the dashboard</li>
               <li>Send a deficiency notification</li>
@@ -160,9 +168,9 @@
             </ul>
           </div>
         </div>
-                <!-- Live Inventory logic and replenishment -->
+        <!-- Live Inventory logic and replenishment -->
         <div class="image-row">
-          <img src="../images/InventoryProcess-logic.png" alt="Inventory Logic and Replenishment" class="fitPic">
+          <img src="../images/InventoryProcess-logic.png" alt="Inventory Logic and Replenishment" class="fitPic step-image">
           <div class="image-note">
             <h4>Inventory Logic and Replenishment</h4>
             <p>If inventory is insufficient, Sanistar will:</p>
@@ -176,7 +184,7 @@
 
         <!-- SLA Enforcement with Risk Alerts -->
         <div class="image-row">
-          <img src="../images/SLA service flow.png" alt="Shortage Notification">
+          <img src="../images/SLA service flow.png" alt="Shortage Notification" class="step-image">
           <div class="image-note">
             <h4>SLA enforcement with risk alerts</h4>
             <p>If inventory is insufficient, Sanistar will:</p>
@@ -190,7 +198,7 @@
 
         <!-- Real Time (Live) Dashboards -->
         <div class="image-row">
-          <img src="../images/placeholder-shortage.png" alt="Shortage Notification">
+          <img src="../images/placeholder-shortage.png" alt="Shortage Notification" class="step-image">
           <div class="image-note">
             <h4>Real-time dashboards (operational state)</h4>
             <p>If inventory is insufficient, Sanistar will:</p>

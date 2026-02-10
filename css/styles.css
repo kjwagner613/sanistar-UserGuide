@@ -368,7 +368,7 @@ header h1 {
 .step-image {
     max-width: 100%;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: zoom-in;
     margin: 1rem 0;
     border: 1px solid #dee2e6;
     transition: transform 0.2s;
@@ -380,7 +380,7 @@ header h1 {
 
 /* Modal */
 .modal {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -391,11 +391,15 @@ header h1 {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
 }
 
 .modal.active {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
 }
 
 .modal-content {
